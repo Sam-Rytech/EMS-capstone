@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- === CSS === -->
+  <link rel="stylesheet" href="./style.css">
+  <title>EMS Landing page UI</title>
+</head>
+  <body>
+    <!-- === HEADER === -->
+    <header >
+      <nav class="nav-bar">
+        <div class="logo"><a href="#hero"><img src="Images/EMS.svg" alt="EMS logo"></a></div>
+        <div class="nav-items">
+          <a href="#hero">Intro</a>
+          <a href="#about-container">About</a>
+          <a href="#product">Shop</a>
+        </div> 
+        <div class="cart-info">
+          <img src="./Images/cart.svg" alt="EMS logo">
+          <span class="cart-number">0</span>
+        </div>
+        
+      </nav>
+    </header>
+    <!-- === MAIN === -->
+    <main>
+      <!-- === hero section === -->
+      <section class="hero" id="hero">
+        <div class="hero-container">
+          <div class="column-left">
+            <h1>The <br>E-Millenia Store</h1>
+          </div>
+          <div class="column-right">
+            <img src="./Images/heroImage.png" alt="gadgets image" class="hero-image">
+          </div>
+        </div>
+        <div class="btn"><a href="#product"><button class="hero-btn">Shop Now</button></a></div> 
+      </section>  
+      <!-- === about section === -->
+      <section class="about-container" id="about-container">
+          <p>E-Millenia Store is an hypothetical online 
+            store for gadgets we believe every 
+            'Millenial' or 'Gen-z' should have today. 
+            We've got mobile phones, laptops, 
+            smartwatches and other gadgets. 
+            Explore all our gadgets and chose the ones 
+            that suit you.
+          </p>
+      </section>
+      <!-- === product section === -->
+      <section class="product" id="product">
+        <h1 class="title">our gadgets</h1>
+        <div class="product-container">
+          <!-- === product list === -->
+          <!-- <div class="product-list" >
+            <div class="product-detail" >
+              <img src="./Images/product1.png" alt="" class="product-img" >
+              <div class="price-container">
+                <div class="centered">
+                  <h3 class="price-heading" >Price </h3>
+                  <h2 class="product-price">#500,000</h2>
+                </div>
+              </div>
+            </div>
+            <h2 class="product-name">samsung tv</h2>
+            <button class="product-btn" data-id="1" >Add to Cart</button>-->
+          </div> 
+      </section>
+    </main>
+    <!-- === FOOTER === -->
+    <footer>
+      <div class="footer">
+        <img src="./Images/EMS.svg" alt="EMS logo">
+        <p>Design by Frontend Ninja programmed by Sam_Rytech 
+      </div>
+    </footer>
+    <!-- === CART MODAL BOX  START=== -->
+    <div class="modal-overlay" ></div>
+    <div class="cart-modal" >
+      <div class="modal-list" >
+        <div class="cart-header">
+          <span class="number item-detail">S/N</span>
+          <span class="name item-detail">Item</span>
+          <span class="price item-detail">Price</span>
+          <span class="quantity item-detail">Quantity</span>
+          <span class="remove item-detail"></span>
+        </div>
+        <div class="cart-content">
+        <!-- cart item row start -->
+          <!-- <div class="cart-item" >
+          <span class="item-number item-detail" >1</span>
+          <span class="item-name item-detail" >samsung tv</span>
+          <span class="item-price item-detail" >#340,000</span>
+          <div class="input-detail item-detail">
+            <button class="minus-btn"  type="button" name="button">-</button>
+              <span class="item-input" >${item.amount}</span>
+            <button class="plus-btn" type="button" name="button">+</button>
+          </div>
+          <button class="remove-btn item-detai" >Remove</button>
+          </div> -->
+        <!-- cart item row end -->
+        </div>
+        <!-- form input start -->
+        <div class="cart-form">
+          <form action="">
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <p class="error" id="name-error"></p>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <p class="error" id="email-error"></p>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+            <p class="error" id="phone-error"></p>
+          </form>
+        </div>
+        <!-- form input end -->
+        <!-- cart price total details -->
+        <div class="price-details">
+          <h2>Total Amount to be Paid</h2>
+          <h2>&#8358;<span class="total-amount" id="total-amount">0</span></h2>
+        </div>
+        <!-- checkout and continue shoping button  -->
+        <div class="checkout-container">
+          <button class="continueShopping-btn" id="continueShopping-btn">Continue Shopping</button>
+          <button class="checkOut-btn" id="checkOut-btn">Check Out</button>
+        </div>
+      </div>
+    </div>
+  <!-- === SUMMARY MODAL BOX  START === -->
+  <div class="summary-modal-overlay" ></div>
+    <div class="summary-modal" >
+      <div class="summary-modal-list" >
+      <p class="thankyou-msg">Thank You, <span class="costumer-name"></span>, Your Order Has been Received</p>
+      <img src="./Images/check.svg" alt="payment check">
+      <h1 class="summary">Summary</h1>
+      <!-- cart summary list -->
+        <div class="summary-header" >
+          <span class="summary-number summary-item-detail">S/N</span>
+          <span class="summary-name summary-item-detail">Item</span>
+          <span class="summary-quantity summary-item-detail">Quantity</span>
+        </div>
+        <div class="summary-content">
+          <!-- cart summary row start -->
+          <!-- <div class="summary-item" >
+            <span class="summary-item-number summary-item-detail">1</span>
+            <span class="summary-item-name summary-item-detail">samsung tv</span>
+            <span class="summary-input-detail summary-item-detail">8</span>
+          </div> -->
+          <!-- cart summary row end -->
+        </div>
+        <!-- Summary ok button  -->
+        <button class="summary-ok-btn">Ok</button>
+      </div>
+    </div>
+    <!-- === MAIN.JS === -->
+    <script src="JS/main.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+  </body>
+</html>

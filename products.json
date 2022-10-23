@@ -1,0 +1,42 @@
+{
+  "productsList" : [
+{
+    "id": "p1",
+    "name": "Samsung TV",
+    "price": 500000,
+    "image": "./Images/product1.png"
+},
+{
+    "id": "p2",
+    "name": "Pixel 4a",
+    "price": 250000,
+    "image": "./Images/product2.png"
+},
+{
+    "id": "p3",
+    "name": "PS 5",
+    "price": 300000,
+    "image": "./Images/product3.png"
+},
+{
+    "id": "p4",
+    "name": "MacBook Air",
+    "price": 800000,
+    "image": "./Images/product4.png"
+},
+{
+    "id": "p5",
+    "name": "Apple Watch",
+    "price": 95000,
+    "image": "./Images/product5.png"
+},
+{
+    "id": "p6",
+    "name": "Air Pods",
+    "price": 75000,
+    "image": "./Images/product6.png"
+}
+
+]
+
+}
